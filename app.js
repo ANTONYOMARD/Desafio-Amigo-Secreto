@@ -8,7 +8,8 @@ function agregarAmigo(nombre){
     if(nombre === ""){
         alert("Por favor ingresa un nombre");
         return;
+    }else{
+        amigos.push(nombre);
+        document.getElementById("amigo").value = "";
     }
-    amigos.push(nombre);
-    
 }
